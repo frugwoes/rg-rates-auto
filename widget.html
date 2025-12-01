@@ -5,23 +5,9 @@
 
     <style>
         #rg-cashpark-container * { box-sizing: border-box; }
-        #rg-cashpark-container {
-            font-family: 'Inter', sans-serif;
-            color: #1f2937;
-            max-width: 100%;
-            margin: 0 auto;
-        }
-        #rg-cashpark-container h2 { 
-            font-family: 'Poppins', sans-serif; 
-            font-weight: 700; 
-            margin: 0; 
-        }
-        #rg-cashpark-container .wrapper {
-            background: linear-gradient(135deg, rgba(34,139,34,0.08), rgba(144,238,144,0.05));
-            border-radius: 16px;
-            padding: 48px 32px;
-            border: 1px solid rgba(34,139,34,0.2);
-        }
+        #rg-cashpark-container {font-family:'Inter',sans-serif;color:#1f2937;max-width:100%;margin:0 auto;}
+        #rg-cashpark-container h2 {font-family:'Poppins',sans-serif;font-weight:700;margin:0;}
+        #rg-cashpark-container .wrapper {background:linear-gradient(135deg,rgba(34,139,34,0.08),rgba(144,238,144,0.05));border-radius:16px;padding:48px 32px;border:1px solid rgba(34,139,34,0.2);}
         #rg-cashpark-container .title {font-size:38px;text-align:center;margin-bottom:12px;}
         #rg-cashpark-container .subtitle {text-align:center;font-size:19px;margin-bottom:48px;color:#374151;}
         #rg-cashpark-container .grid {display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:48px;}
@@ -32,14 +18,9 @@
         #rg-cashpark-container .note {font-size:13.5px;color:#6b7280;margin-top:6px;}
         #rg-cashpark-container .link {margin-top:18px;display:inline-block;font-weight:600;color:#166534;text-decoration:none;font-size:15.5px;}
         #rg-cashpark-container .link:hover {text-decoration:underline;}
-        @media (max-width:1024px){#rg-cashpark-container .grid{grid-template-columns:repeat(3,1fr);}}
-        @media (max-width:840px){#rg-cashpark-container .grid{grid-template-columns:repeat(2,1fr);}}
-        @media (max-width:480px){
-            #rg-cashpark-container .grid{grid-template-columns:1fr;}
-            #rg-cashpark-container .wrapper{padding:32px 20px;}
-            #rg-cashpark-container .title{font-size:32px;}
-            #rg-cashpark-container .rate{font-size:40px;}
-        }
+        @media(max-width:1024px){#rg-cashpark-container .grid{grid-template-columns:repeat(3,1fr);}}
+        @media(max-width:840px){#rg-cashpark-container .grid{grid-template-columns:repeat(2,1fr);}}
+        @media(max-width:480px){#rg-cashpark-container .grid{grid-template-columns:1fr;} #rg-cashpark-container .wrapper{padding:32px 20px;} #rg-cashpark-container .title{font-size:32px;} #rg-cashpark-container .rate{font-size:40px;}}
         #rg-cashpark-container .bottom {text-align:center;padding-top:32px;border-top:1px dashed rgba(34,139,34,0.4);}
     </style>
 
@@ -57,7 +38,7 @@
         </div>
 
         <div class="bottom">
-            <p style="margin:0; font-size:21px; font-weight:600;">
+            <p style="margin:0;font-size:21px;font-weight:600;">
                 Monthly Strategy Update · <span id="month-name">December 2025</span>
             </p>
             <a href="/blog/where-to-park-cash-december-2025" class="link" style="font-size:18px;">
