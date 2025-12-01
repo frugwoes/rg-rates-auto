@@ -48,12 +48,12 @@
         <p class="subtitle">Real-time highest yields in Singapore — auto-updated monthly</p>
 
         <div class="grid">
-            <div class="box"><div class="rate" data-rate="tbill">0.00%</div><div class="label">Latest 6-Month T-bill</div><div class="note">Auction: 01 Dec 2025</div><a href="/t-bills" class="link">Get Application Reminder</a></div>
-            <div class="box"><div class="rate" data-rate="cma">0.00%</div><div class="label">Top Cash Management Account</div><div class="note">Zero lock-in, daily interest</div><a href="/cash-management" class="link">Compare All Accounts</a></div>
-            <div class="box"><div class="rate" data-rate="hysa">0.00% p.a.</div><div class="label">Highest Savings Rate</div><div class="note">No minimum balance tricks</div><a href="/savings" class="link">See Top 5 Accounts</a></div>
-            <div class="box"><div class="rate" data-rate="ssb">0.00%</div><div class="label">10-Year SSB Avg Return</div><div class="note">Next tranche</div><a href="/ssb" class="link">Get SSB Alerts</a></div>
-            <div class="box"><div class="rate" data-rate="fd">0.00%</div><div class="label">Best SGD Fixed Deposit</div><div class="note">12–18 month tenures</div><a href="/fixed-deposits" class="link">Lock In Rate Now</a></div>
-            <div class="box"><div class="rate" data-rate="usd">0.00%</div><div class="label">Best USD Fixed Deposit</div><div class="note">Strong USD play</div><a href="/usd-fd" class="link">View USD Offers</a></div>
+            <div class="box"><div class="rate">1.39%</div><div class="label">Latest 6-Month T-bill</div><div class="note">Auction: 01 Dec 2025</div><a href="/t-bills" class="link">Get Application Reminder</a></div>
+            <div class="box"><div class="rate">4.22%</div><div class="label">Top Cash Management Account</div><div class="note">Zero lock-in, daily interest</div><a href="/cash-management" class="link">Compare All Accounts</a></div>
+            <div class="box"><div class="rate">7.88% p.a.</div><div class="label">Highest Savings Rate</div><div class="note">No minimum balance tricks</div><a href="/savings" class="link">See Top 5 Accounts</a></div>
+            <div class="box"><div class="rate">1.85%</div><div class="label">10-Year SSB Avg Return</div><div class="note">Next tranche</div><a href="/ssb" class="link">Get SSB Alerts</a></div>
+            <div class="box"><div class="rate">1.30%</div><div class="label">Best SGD Fixed Deposit</div><div class="note">12–18 month tenures</div><a href="/fixed-deposits" class="link">Lock In Rate Now</a></div>
+            <div class="box"><div class="rate">4.50%</div><div class="label">Best USD Fixed Deposit</div><div class="note">Strong USD play</div><a href="/usd-fd" class="link">View USD Offers</a></div>
         </div>
 
         <div class="bottom">
@@ -67,20 +67,6 @@
     </div>
 
     <script>
-        const rates = {
-            tbill: "1.39%",
-            cma:   "4.22%",
-            hysa:  "7.88% p.a.",
-            ssb:   "1.85%",
-            fd:    "1.30%",
-            usd:   "4.50%"
-        };
-
-        document.querySelectorAll('[data-rate]').forEach(el => {
-            const key = el.dataset.rate;
-            if (rates[key]) el.innerHTML = rates[key];
-        });
-
         document.getElementById('month-name').textContent = 
             new Date().toLocaleDateString('en-SG', { month: 'long', year: 'numeric' });
     </script>
